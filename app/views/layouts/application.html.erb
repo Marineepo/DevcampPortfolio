@@ -25,6 +25,7 @@
      <% end %>
      
     <%= yield %>
+    <%= login_helper %>
     
     <% if session[:source] %>
     Thanks for visiting me from <%= session[:source] %>
