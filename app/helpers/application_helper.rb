@@ -15,4 +15,8 @@ module ApplicationHelper
       content_tag(:p, greeting, class: "source-greeting")
     end
   end
+  
+  def copyright_generator
+    NicklausViewTool::Renderer.copyright 'Benjamin Nicklaus', 'All right reserved'
+  end
 end
