@@ -59,7 +59,7 @@ class PortfoliosController < ApplicationController
         # Perform the look up
         # Destroy/delete the record
         
-        @@portfolio_item.destroy
+        @portfolio_item.destroy
         # Redirect
         
         respond_to do |format|
