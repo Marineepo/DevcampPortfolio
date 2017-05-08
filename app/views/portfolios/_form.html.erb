@@ -1,4 +1,11 @@
+
 <%= form_for(@portfolio_item) do |f| %>
+  <% if @portfolio_item.errors.any? %>
+    <% @portfolio_item.errors.full_messages.each do |error| %>
+      <%= js add_gritter(error, title: "Benjamin J Nicklaus", sticky: false) %>
+    <% end %>
+  <% end %>
+  
   <div class="row">
     <div class="col-md-6">
       <div class="form-group">
@@ -42,7 +49,7 @@
       <% end %>
 
       <div>
-        <%= link_to_add_association 'Add Technology', f, :technologies %>
+       
       </div>
     </div>
 
