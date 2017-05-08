@@ -57,7 +57,6 @@ GEM
       sass (>= 3.4.19)
     builder (3.2.3)
     byebug (9.0.6)
-
     carrierwave (1.1.0)
       activemodel (>= 4.0.0)
       activesupport (>= 4.0.0)
@@ -65,9 +64,7 @@ GEM
     carrierwave-aws (1.1.0)
       aws-sdk (~> 2.0)
       carrierwave (>= 0.7, < 2.0)
-
     cocoon (1.2.9)
-
     coffee-rails (4.2.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.2.x)
@@ -221,12 +218,9 @@ DEPENDENCIES
   Nicklaus_view_tool (~> 0.1.0)
   bootstrap (~> 4.0.0.alpha6)
   byebug
-
   carrierwave (~> 1.1)
   carrierwave-aws (~> 1.1)
-
   cocoon (~> 1.2, >= 1.2.9)
-
   coffee-rails (~> 4.2)
   devise (~> 4.2)
   dotenv-rails (~> 2.2, >= 2.2.1)

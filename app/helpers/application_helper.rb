@@ -17,7 +17,7 @@ module ApplicationHelper
   end
 
   def copyright_generator
-    DevcampViewTool::Renderer.copyright 'Benjamin Nicklaus Portfolio', 'All rights reserved'
+    NicklausViewTool::Renderer.copyright "Benjamin Nicklaus Portfolio", 'All rights reserved'
   end
 
   def nav_items
@@ -68,7 +68,7 @@ module ApplicationHelper
   end
 
   def alert_generator msg
-    js add_gritter(msg, title: 'Benjamin Nicklaus Portfolio', sticky: false)
+    js add_gritter(msg, title: "Benjamin Nicklaus Portfolio", sticky: false)
   end
 
 end

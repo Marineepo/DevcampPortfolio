@@ -18,19 +18,6 @@
       <div class="site-wrapper-inner">
         <div class="cover-container">
 
-          
-          <%= video_tag(
-            'HardDrivePhotojpeg.mp4', 
-            id: 'background', 
-            autoplay: true,
-            loop: true,
-            muted: true,
-            poster: 'penink.jpg'
-            
-            )
-              %>
-
-
           <%= video_tag(
               'HardDrivePhotojpeg.mp4',
               id: 'background',
@@ -41,14 +28,13 @@
             )
             %>
 
-
           <%= render "shared/application_nav" %>
 
           <%= yield %>
 
           <%= render "shared/application_footer" %>
 
-          <%= alerts %>
+          <%= render 'shared/alerts' %>
 
           <%= source_helper("application") %>
 
