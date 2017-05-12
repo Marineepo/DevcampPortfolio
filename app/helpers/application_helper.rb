@@ -8,7 +8,7 @@ module ApplicationHelper
       link_to "Logout", destroy_user_session_path, method: :delete, class: style
     end
   end
-
+  
   def source_helper(styles)
     if session[:source]
       greeting = "Thanks for visiting me from #{session[:source]}, please feel free to #{ link_to 'contact me', contact_path} if you'd like to work together."
